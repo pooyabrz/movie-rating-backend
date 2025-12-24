@@ -37,3 +37,22 @@ def create_movie(
     """Create a new movie"""
     data = service.create_movie(movie)
     return {"status": "success", "data": data}
+
+@router.delete("/{movie_id}", response_model=dict)
+def delete_movie(
+    movie_id: int,
+    service: MovieService = Depends(get_service)
+):
+    """Delete a movie"""
+    service.delete_movie(movie_id)
+    return {"status": "success", "data": {"message": "Movie deleted"}}
+
+@router.post("/{movie_id}/ratings", response_model=dict)
+def rate_movie(
+    movie_id: int,
+    rating: RatingCreate,
+    service: MovieService = Depends(get_service)
+):
+    """Rate a movie"""
+    service.rate_movie(movie_id, rating.score)
+    return {"status": "success", "data": {"message": "Rating added"}}
