@@ -2,7 +2,7 @@ from typing import NoReturn
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import Session
 
-DATABASE_URL = "postgresql://movieuser:moviepass@localhost:5432/moviedb"
+DATABASE_URL = "postgresql://user:password@localhost:5432/moviedb"
 
 engine = create_engine(DATABASE_URL)
 
