@@ -1,0 +1,69 @@
+[2025-12-24T19:12:41.768853Z] CRITICAL movie-rating-api no-request-id GET /api/v1/movies 500 - Unexpected error: RequestLoggingMiddleware.__init__() takes 2 positional arguments but 3 were given
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_utils.py", line 79, in collapse_excgroups
+  |     yield
+  |   File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\base.py", line 192, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\anyio\_backends\_asyncio.py", line 781, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    |     self.gen.throw(value)
+    |   File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_utils.py", line 85, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    | TypeError: RequestLoggingMiddleware.__init__() takes 2 positional arguments but 3 were given
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_utils.py", line 85, in collapse_excgroups
+    raise exc
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: RequestLoggingMiddleware.__init__() takes 2 positional arguments but 3 were given
+[2025-12-24T19:17:26.474435Z] INFO movie-rating-api 78000d4b-b1ab-4ae0-bf49-4dc8b1737199 GET /api/v1/movies?page=1&page_size=5 - Request started
+[2025-12-24T19:17:26.476436Z] INFO movie-rating-api 78000d4b-b1ab-4ae0-bf49-4dc8b1737199 GET /api/v1/movies?page=1&page_size=5 307 0.0ms - Request completed
+[2025-12-24T19:17:26.481438Z] INFO movie-rating-api bcf6f8ee-1491-4786-9195-4448b6f87f47 GET /api/v1/movies/?page=1&page_size=5 - Request started
+[2025-12-24T19:17:26.644208Z] INFO movie-rating-api bcf6f8ee-1491-4786-9195-4448b6f87f47 GET /api/v1/movies/?page=1&page_size=5 200 161.77ms - Request completed
+[2025-12-24T19:19:19.939400Z] INFO movie-rating-api c9c636f4-d07c-4466-8560-7589c3b8dfed GET /api/v1/movies/1003 - Request started
+[2025-12-24T19:19:20.052534Z] INFO movie-rating-api c9c636f4-d07c-4466-8560-7589c3b8dfed GET /api/v1/movies/1003 200 112.13ms - Request completed
+[2025-12-24T19:19:48.029137Z] INFO movie-rating-api 4ac40cf3-ed22-452a-bc75-ffd3815b98c2 POST /api/v1/movies - Request started
+[2025-12-24T19:19:48.032137Z] INFO movie-rating-api 4ac40cf3-ed22-452a-bc75-ffd3815b98c2 POST /api/v1/movies 307 1.0ms - Request completed
+[2025-12-24T19:19:48.042776Z] INFO movie-rating-api 1cdb700c-9d2d-4acb-af7c-d710bf77f3bd POST /api/v1/movies/ - Request started
+[2025-12-24T19:19:48.124775Z] INFO movie-rating-api None - Movie created: 1004 - The Dark Knight
+[2025-12-24T19:19:48.143919Z] INFO movie-rating-api 1cdb700c-9d2d-4acb-af7c-d710bf77f3bd POST /api/v1/movies/ 201 84.0ms - Request completed
+[2025-12-24T19:19:58.144056Z] INFO movie-rating-api c69de32e-33ec-4010-bc6a-521e97bd1986 PUT /api/v1/movies/3 - Request started
+[2025-12-24T19:19:58.184055Z] INFO movie-rating-api None - Movie updated: 3 - The Dark Knight Rises
+[2025-12-24T19:19:58.190095Z] INFO movie-rating-api c69de32e-33ec-4010-bc6a-521e97bd1986 PUT /api/v1/movies/3 200 46.04ms - Request completed
+[2025-12-24T19:21:42.504653Z] INFO movie-rating-api fd6935e6-b8ec-4aca-ba07-1c8240a36e47 DELETE /api/v1/movies/1002 - Request started
+[2025-12-24T19:21:42.513628Z] WARNING movie-rating-api None - Movie not found for deletion: 1002
+[2025-12-24T19:21:42.516626Z] WARNING movie-rating-api fd6935e6-b8ec-4aca-ba07-1c8240a36e47 DELETE /api/v1/movies/1002 404 - HTTP exception: Movie not found
+[2025-12-24T19:21:42.516626Z] WARNING movie-rating-api fd6935e6-b8ec-4aca-ba07-1c8240a36e47 DELETE /api/v1/movies/1002 404 11.97ms - Request completed
+[2025-12-24T19:21:49.156186Z] INFO movie-rating-api 303e5c11-5806-4621-b149-7e28307d6d7b DELETE /api/v1/movies/1003 - Request started
+[2025-12-24T19:21:49.165192Z] WARNING movie-rating-api None - Movie deleted: 1003 - The Dark Knight
+[2025-12-24T19:21:49.189188Z] INFO movie-rating-api 303e5c11-5806-4621-b149-7e28307d6d7b DELETE /api/v1/movies/1003 204 33.0ms - Request completed
+[2025-12-24T19:22:18.569001Z] INFO movie-rating-api 9b2c92b7-86e5-4d5b-a57e-9e143b33c339 POST /api/v1/movies/2/ratings?score=9 - Request started
+[2025-12-24T19:22:18.708482Z] INFO movie-rating-api None - Rating added: movie_id=2, score=9, rating_id=23004
+[2025-12-24T19:22:18.721497Z] INFO movie-rating-api 9b2c92b7-86e5-4d5b-a57e-9e143b33c339 POST /api/v1/movies/2/ratings?score=9 201 148.47ms - Request completed
+[2025-12-24T19:22:38.354781Z] INFO movie-rating-api a6a624c7-abf5-4cc1-93c8-22707fa5dc62 GET /api/v1/movies/2 - Request started
+[2025-12-24T19:22:38.367463Z] INFO movie-rating-api a6a624c7-abf5-4cc1-93c8-22707fa5dc62 GET /api/v1/movies/2 200 10.64ms - Request completed
