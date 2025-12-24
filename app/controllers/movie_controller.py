@@ -21,6 +21,7 @@ def list_movies(
 ):
     """List movies with pagination, filtering and aggregated ratings"""
     data = service.get_movies(page, page_size, title=title, release_year=release_year, genre=genre)
+
     return {"status": "success", "data": data}
 
 @router.get("/{movie_id}", response_model=dict)

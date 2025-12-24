@@ -29,6 +29,7 @@ class MovieRepository:
         
         return query.offset(skip).limit(limit).all()
 
+
     def get_by_id(self, movie_id: int) -> Optional[Movie]:
         return self.db.query(Movie).options(
             joinedload(Movie.director),
@@ -81,6 +82,7 @@ class MovieRepository:
         self.db.refresh(movie)
         # Refresh to load relationships
         return self.get_by_id(movie.id)
+
 
     def delete(self, movie: Movie):
         self.db.delete(movie)

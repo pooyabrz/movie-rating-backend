@@ -17,6 +17,7 @@ class MovieService:
     def get_movies(self, page: int, page_size: int, title: str = None, release_year: int = None, genre: str = None):
         skip = (page - 1) * page_size
         movies = self.repo.get_all(skip=skip, limit=page_size, title=title, release_year=release_year, genre=genre)
+
         
         # Append calculated stats
         results = []
@@ -26,6 +27,7 @@ class MovieService:
             movie_response.average_rating = round(stats.average, 1) if stats.average else 0.0
             movie_response.ratings_count = stats.count
             results.append(movie_response)
+
         return results
 
     def get_movie_detail(self, movie_id: int):
@@ -38,6 +40,7 @@ class MovieService:
         movie_response.average_rating = round(stats.average, 1) if stats.average else 0.0
         movie_response.ratings_count = stats.count
         return movie_response
+
 
     def create_movie(self, movie_in: MovieCreate):
         # Validation: Check Director
@@ -79,6 +82,7 @@ class MovieService:
         movie_response.average_rating = round(stats.average, 1) if stats.average else 0.0
         movie_response.ratings_count = stats.count
         return movie_response
+
 
     def delete_movie(self, movie_id: int):
         movie = self.repo.get_by_id(movie_id)
