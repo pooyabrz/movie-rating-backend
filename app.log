@@ -67,3 +67,7 @@ TypeError: RequestLoggingMiddleware.__init__() takes 2 positional arguments but 
 [2025-12-24T19:22:18.721497Z] INFO movie-rating-api 9b2c92b7-86e5-4d5b-a57e-9e143b33c339 POST /api/v1/movies/2/ratings?score=9 201 148.47ms - Request completed
 [2025-12-24T19:22:38.354781Z] INFO movie-rating-api a6a624c7-abf5-4cc1-93c8-22707fa5dc62 GET /api/v1/movies/2 - Request started
 [2025-12-24T19:22:38.367463Z] INFO movie-rating-api a6a624c7-abf5-4cc1-93c8-22707fa5dc62 GET /api/v1/movies/2 200 10.64ms - Request completed
+[2025-12-26T20:55:21.228121Z] INFO movie-rating-api 2a2c3256-41ba-4624-8875-db6a1185ff17 GET /api/v1/movies?page=1&page_size=5 - Request started
+[2025-12-26T20:55:21.237525Z] INFO movie-rating-api 2a2c3256-41ba-4624-8875-db6a1185ff17 GET /api/v1/movies?page=1&page_size=5 307 4.46ms - Request completed
+[2025-12-26T20:55:21.255706Z] INFO movie-rating-api 7300f994-a8c0-4f81-b650-9cd1662bc793 GET /api/v1/movies/?page=1&page_size=5 - Request started
+[2025-12-26T20:55:21.537420Z] INFO movie-rating-api 7300f994-a8c0-4f81-b650-9cd1662bc793 GET /api/v1/movies/?page=1&page_size=5 200 280.6ms - Request completed
