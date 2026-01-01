@@ -1,0 +1,114 @@
+###
+### DATABASE SETUP REQUIRED
+###
+### The database is currently empty. Run the seed script first:
+### PGPASSWORD=password psql -U user -d moviedb -h localhost -f scripts/seeddb.sql
+### 
+### This will load 1000 movies with directors and genres from TMDB data.
+### After seeding, the list and filter requests below will return data.
+###
+
+### Movie Rating Backend API - REST Client
+### Base URL Configuration
+@baseUrl = http://localhost:8000
+@apiVersion = /api/v1
+
+### Health Check
+GET {{baseUrl}}/health
+Accept: application/json
+
+###
+### MOVIES ENDPOINTS - RETRIEVE (after seeding)
+###
+
+### List Movies - Paginated (Default)
+GET {{baseUrl}}{{apiVersion}}/movies?page=1&page_size=10
+Accept: application/json
+
+### List Movies - Next Page
+GET {{baseUrl}}{{apiVersion}}/movies?page=2&page_size=10
+Accept: application/json
+
+### List Movies - Filter by Title
+GET {{baseUrl}}{{apiVersion}}/movies?page=1&page_size=10&title=Avatar
+Accept: application/json
+
+### List Movies - Filter by Release Year
+GET {{baseUrl}}{{apiVersion}}/movies?page=1&page_size=10&release_year=2009
+Accept: application/json
+
+### List Movies - Filter by Genre
+GET {{baseUrl}}{{apiVersion}}/movies?page=1&page_size=10&genre=Action
+Accept: application/json
+
+### Get Movie by ID (will work after seeding)
+GET {{baseUrl}}{{apiVersion}}/movies/100
+Accept: application/json
+
+### Get Movie by ID (try another)
+GET {{baseUrl}}{{apiVersion}}/movies/500
+Accept: application/json
+
+###
+### MOVIES ENDPOINTS - CREATE/UPDATE/DELETE
+###
+### NOTE: These require valid director_id and genre_ids from the database.
+### After running the seed script, use valid IDs from:
+### - PGPASSWORD=password psql -U user -d moviedb -h localhost
+### - SELECT id FROM directors LIMIT 1;
+### - SELECT id FROM genres LIMIT 2;
+###
+
+### Create Movie (AFTER seeding - use real director and genre IDs)
+POST {{baseUrl}}{{apiVersion}}/movies
+Content-Type: application/json
+
+{
+  "title": "Test Movie 2026",
+  "release_year": 2026,
+  "cast": "Test Actor 1, Test Actor 2",
+  "description": "A test movie created for API validation",
+  "director_id": 2,
+  "genre_ids": [1, 2]
+}
+
+### Update Movie
+PUT {{baseUrl}}{{apiVersion}}/movies/100
+Content-Type: application/json
+
+{
+  "title": "Updated Test Movie",
+  "description": "Updated description for testing",
+  "cast": "Updated Actor 1, Updated Actor 2"
+}
+
+### Delete Movie (use with caution!)
+DELETE {{baseUrl}}{{apiVersion}}/movies/9999
+
+###
+### RATINGS ENDPOINTS
+###
+
+### Rate a Movie (1-10 scale)
+POST {{baseUrl}}{{apiVersion}}/movies/100/ratings?score=9
+Accept: application/json
+
+### Get All Ratings for a Movie
+GET {{baseUrl}}{{apiVersion}}/movies/100/ratings
+Accept: application/json
+
+###
+### NOTES
+###
+# - Make sure the server is running on localhost:8000
+# - Use the VS Code REST Client extension to run these requests
+# 
+# DATABASE SETUP REQUIRED:
+# - The database is currently EMPTY (no directors or genres)
+# - Run the seed script to populate with 1000 movies:
+#   PGPASSWORD=password psql -U user -d moviedb -h localhost -f scripts/seeddb.sql
+# - After seeding, all requests will work with real data
+#
+# REQUIRED FIELDS for MovieCreate: title, release_year, director_id, genre_ids
+# OPTIONAL FIELDS: cast, description
+# ALL RESPONSES follow the format: {"status": "success", "data": {...}}

@@ -71,3 +71,256 @@ TypeError: RequestLoggingMiddleware.__init__() takes 2 positional arguments but 
 [2025-12-26T20:55:21.237525Z] INFO movie-rating-api 2a2c3256-41ba-4624-8875-db6a1185ff17 GET /api/v1/movies?page=1&page_size=5 307 4.46ms - Request completed
 [2025-12-26T20:55:21.255706Z] INFO movie-rating-api 7300f994-a8c0-4f81-b650-9cd1662bc793 GET /api/v1/movies/?page=1&page_size=5 - Request started
 [2025-12-26T20:55:21.537420Z] INFO movie-rating-api 7300f994-a8c0-4f81-b650-9cd1662bc793 GET /api/v1/movies/?page=1&page_size=5 200 280.6ms - Request completed
+[2026-01-01T07:51:34.639142Z] INFO movie-rating-api 939223cd-4671-49f8-91da-3503d4464eaa GET / - Request started
+[2026-01-01T07:51:34.640576Z] WARNING movie-rating-api 939223cd-4671-49f8-91da-3503d4464eaa GET / 404 0.46ms - Request completed
+[2026-01-01T07:51:34.737523Z] INFO movie-rating-api 59ece6f1-04b5-4ec9-8ad7-9d72e99be5ed GET /favicon.ico - Request started
+[2026-01-01T07:51:34.737784Z] WARNING movie-rating-api 59ece6f1-04b5-4ec9-8ad7-9d72e99be5ed GET /favicon.ico 404 0.19ms - Request completed
+[2026-01-01T07:52:40.785402Z] INFO movie-rating-api 36ba4c54-0078-40fd-b217-5dce0d9b5d35 GET /api/v1/movies/1 - Request started
+[2026-01-01T07:52:40.826087Z] WARNING movie-rating-api 36ba4c54-0078-40fd-b217-5dce0d9b5d35 GET /api/v1/movies/1 404 - HTTP exception: Movie not found
+[2026-01-01T07:52:40.826257Z] WARNING movie-rating-api 36ba4c54-0078-40fd-b217-5dce0d9b5d35 GET /api/v1/movies/1 404 40.76ms - Request completed
+[2026-01-01T07:52:42.999894Z] INFO movie-rating-api d6ca6b6f-e726-4fbe-8cb4-bb55cea3af60 GET /api/v1/movies/1 - Request started
+[2026-01-01T07:52:43.003519Z] WARNING movie-rating-api d6ca6b6f-e726-4fbe-8cb4-bb55cea3af60 GET /api/v1/movies/1 404 - HTTP exception: Movie not found
+[2026-01-01T07:52:43.003669Z] WARNING movie-rating-api d6ca6b6f-e726-4fbe-8cb4-bb55cea3af60 GET /api/v1/movies/1 404 3.71ms - Request completed
+[2026-01-01T07:52:45.687263Z] INFO movie-rating-api 35dc88d8-4260-4ee1-a234-c8647ebc4b78 GET /api/v1/movies/1 - Request started
+[2026-01-01T07:52:45.695155Z] WARNING movie-rating-api 35dc88d8-4260-4ee1-a234-c8647ebc4b78 GET /api/v1/movies/1 404 - HTTP exception: Movie not found
+[2026-01-01T07:52:45.695341Z] WARNING movie-rating-api 35dc88d8-4260-4ee1-a234-c8647ebc4b78 GET /api/v1/movies/1 404 7.99ms - Request completed
+[2026-01-01T07:52:47.079996Z] INFO movie-rating-api 8aeb1bc8-0e2b-4c56-abb3-2c81dd855996 GET /api/v1/movies?page=1&page_size=10&genre=Action - Request started
+[2026-01-01T07:52:47.080217Z] INFO movie-rating-api 8aeb1bc8-0e2b-4c56-abb3-2c81dd855996 GET /api/v1/movies?page=1&page_size=10&genre=Action 307 0.15ms - Request completed
+[2026-01-01T07:52:47.082863Z] INFO movie-rating-api 0da8bf40-21d9-48f0-b627-c6e1b814aad2 GET /api/v1/movies/?page=1&page_size=10&genre=Action - Request started
+[2026-01-01T07:52:47.089778Z] INFO movie-rating-api 0da8bf40-21d9-48f0-b627-c6e1b814aad2 GET /api/v1/movies/?page=1&page_size=10&genre=Action 200 6.82ms - Request completed
+[2026-01-01T07:53:04.856140Z] INFO movie-rating-api 22940457-8416-4b14-a1f9-dc080c691384 GET /api/v1/movies?page=1&page_size=10&genre=Action - Request started
+[2026-01-01T07:53:04.856364Z] INFO movie-rating-api 22940457-8416-4b14-a1f9-dc080c691384 GET /api/v1/movies?page=1&page_size=10&genre=Action 307 0.16ms - Request completed
+[2026-01-01T07:53:04.859265Z] INFO movie-rating-api 9dc7d3b0-a27f-4c2a-a916-72eade010cbf GET /api/v1/movies/?page=1&page_size=10&genre=Action - Request started
+[2026-01-01T07:53:04.864673Z] INFO movie-rating-api 9dc7d3b0-a27f-4c2a-a916-72eade010cbf GET /api/v1/movies/?page=1&page_size=10&genre=Action 200 5.28ms - Request completed
+[2026-01-01T07:53:06.190505Z] INFO movie-rating-api e02d71c1-8ac6-4bb7-a353-d49eefc1b895 GET /api/v1/movies/1 - Request started
+[2026-01-01T07:53:06.195789Z] WARNING movie-rating-api e02d71c1-8ac6-4bb7-a353-d49eefc1b895 GET /api/v1/movies/1 404 - HTTP exception: Movie not found
+[2026-01-01T07:53:06.195922Z] WARNING movie-rating-api e02d71c1-8ac6-4bb7-a353-d49eefc1b895 GET /api/v1/movies/1 404 5.35ms - Request completed
+[2026-01-01T07:53:08.419573Z] INFO movie-rating-api 3ac3e86b-03c4-4879-90f6-b048c4b30254 POST /api/v1/movies - Request started
+[2026-01-01T07:53:08.419763Z] INFO movie-rating-api 3ac3e86b-03c4-4879-90f6-b048c4b30254 POST /api/v1/movies 307 0.12ms - Request completed
+[2026-01-01T07:53:08.422253Z] INFO movie-rating-api aa844d67-5aa1-4c84-9c3d-81877761cea5 POST /api/v1/movies/ - Request started
+[2026-01-01T07:53:08.423624Z] WARNING movie-rating-api aa844d67-5aa1-4c84-9c3d-81877761cea5 POST /api/v1/movies/ 422 - Validation error: 3 validation errors
+[2026-01-01T07:53:08.423758Z] WARNING movie-rating-api aa844d67-5aa1-4c84-9c3d-81877761cea5 POST /api/v1/movies/ 422 1.45ms - Request completed
+[2026-01-01T07:53:23.077270Z] INFO movie-rating-api c047f50c-022a-4d5a-a553-f4a7f33458c7 POST /api/v1/movies - Request started
+[2026-01-01T07:53:23.077582Z] INFO movie-rating-api c047f50c-022a-4d5a-a553-f4a7f33458c7 POST /api/v1/movies 307 0.21ms - Request completed
+[2026-01-01T07:53:23.081616Z] INFO movie-rating-api abceb6a6-eda8-4d13-a992-a29e1ada16c8 POST /api/v1/movies/ - Request started
+[2026-01-01T07:53:23.083485Z] WARNING movie-rating-api abceb6a6-eda8-4d13-a992-a29e1ada16c8 POST /api/v1/movies/ 422 - Validation error: 3 validation errors
+[2026-01-01T07:53:23.083693Z] WARNING movie-rating-api abceb6a6-eda8-4d13-a992-a29e1ada16c8 POST /api/v1/movies/ 422 1.96ms - Request completed
+[2026-01-01T07:53:24.021258Z] INFO movie-rating-api 4b269915-8b08-47f2-8cc6-4b8bf76400df POST /api/v1/movies - Request started
+[2026-01-01T07:53:24.021696Z] INFO movie-rating-api 4b269915-8b08-47f2-8cc6-4b8bf76400df POST /api/v1/movies 307 0.35ms - Request completed
+[2026-01-01T07:53:24.024453Z] INFO movie-rating-api 9555b9b2-c98c-4cad-afd8-ce7277eb2ade POST /api/v1/movies/ - Request started
+[2026-01-01T07:53:24.025347Z] WARNING movie-rating-api 9555b9b2-c98c-4cad-afd8-ce7277eb2ade POST /api/v1/movies/ 422 - Validation error: 3 validation errors
+[2026-01-01T07:53:24.025476Z] WARNING movie-rating-api 9555b9b2-c98c-4cad-afd8-ce7277eb2ade POST /api/v1/movies/ 422 0.96ms - Request completed
+[2026-01-01T07:53:24.641152Z] INFO movie-rating-api 0a226dd0-1168-41b1-aea3-a3938c6bb8a7 POST /api/v1/movies - Request started
+[2026-01-01T07:53:24.641414Z] INFO movie-rating-api 0a226dd0-1168-41b1-aea3-a3938c6bb8a7 POST /api/v1/movies 307 0.17ms - Request completed
+[2026-01-01T07:53:24.644375Z] INFO movie-rating-api 205a9af5-3cd2-422d-97c9-1fb6112dbe69 POST /api/v1/movies/ - Request started
+[2026-01-01T07:53:24.645923Z] WARNING movie-rating-api 205a9af5-3cd2-422d-97c9-1fb6112dbe69 POST /api/v1/movies/ 422 - Validation error: 3 validation errors
+[2026-01-01T07:53:24.646300Z] WARNING movie-rating-api 205a9af5-3cd2-422d-97c9-1fb6112dbe69 POST /api/v1/movies/ 422 1.78ms - Request completed
+[2026-01-01T07:53:26.919837Z] INFO movie-rating-api 459c9a97-2d06-482c-b4f4-50992d8dc16f PUT /api/v1/movies/1 - Request started
+[2026-01-01T07:53:26.923741Z] WARNING movie-rating-api None - Movie not found for update: 1
+[2026-01-01T07:53:26.924559Z] WARNING movie-rating-api 459c9a97-2d06-482c-b4f4-50992d8dc16f PUT /api/v1/movies/1 404 - HTTP exception: Movie not found
+[2026-01-01T07:53:26.924719Z] WARNING movie-rating-api 459c9a97-2d06-482c-b4f4-50992d8dc16f PUT /api/v1/movies/1 404 4.8ms - Request completed
+[2026-01-01T07:53:29.754470Z] INFO movie-rating-api 2e7dedf4-8468-427f-b02f-08de45812b07 DELETE /api/v1/movies/1 - Request started
+[2026-01-01T07:53:29.758633Z] WARNING movie-rating-api None - Movie not found for deletion: 1
+[2026-01-01T07:53:29.759373Z] WARNING movie-rating-api 2e7dedf4-8468-427f-b02f-08de45812b07 DELETE /api/v1/movies/1 404 - HTTP exception: Movie not found
+[2026-01-01T07:53:29.759496Z] WARNING movie-rating-api 2e7dedf4-8468-427f-b02f-08de45812b07 DELETE /api/v1/movies/1 404 4.97ms - Request completed
+[2026-01-01T07:53:32.002993Z] INFO movie-rating-api db83ca7c-6222-49ef-9b21-0aefe096065f GET /api/v1/movies/1/ratings - Request started
+[2026-01-01T07:53:32.008054Z] WARNING movie-rating-api None - Movie not found for ratings retrieval: 1
+[2026-01-01T07:53:32.010673Z] WARNING movie-rating-api db83ca7c-6222-49ef-9b21-0aefe096065f GET /api/v1/movies/1/ratings 404 - HTTP exception: Movie not found
+[2026-01-01T07:53:32.010873Z] WARNING movie-rating-api db83ca7c-6222-49ef-9b21-0aefe096065f GET /api/v1/movies/1/ratings 404 7.78ms - Request completed
+[2026-01-01T07:53:32.642376Z] INFO movie-rating-api da080668-f1db-4d86-95c9-d41cd615391b GET /api/v1/movies/1/ratings - Request started
+[2026-01-01T07:53:32.645513Z] WARNING movie-rating-api None - Movie not found for ratings retrieval: 1
+[2026-01-01T07:53:32.646432Z] WARNING movie-rating-api da080668-f1db-4d86-95c9-d41cd615391b GET /api/v1/movies/1/ratings 404 - HTTP exception: Movie not found
+[2026-01-01T07:53:32.646604Z] WARNING movie-rating-api da080668-f1db-4d86-95c9-d41cd615391b GET /api/v1/movies/1/ratings 404 4.15ms - Request completed
+[2026-01-01T07:53:33.346884Z] INFO movie-rating-api 1b4a667a-4fb3-4ca6-a002-5629ba250df3 GET /api/v1/movies/1/ratings - Request started
+[2026-01-01T07:53:33.350735Z] WARNING movie-rating-api None - Movie not found for ratings retrieval: 1
+[2026-01-01T07:53:33.352208Z] WARNING movie-rating-api 1b4a667a-4fb3-4ca6-a002-5629ba250df3 GET /api/v1/movies/1/ratings 404 - HTTP exception: Movie not found
+[2026-01-01T07:53:33.352396Z] WARNING movie-rating-api 1b4a667a-4fb3-4ca6-a002-5629ba250df3 GET /api/v1/movies/1/ratings 404 5.42ms - Request completed
+[2026-01-01T07:53:35.600900Z] INFO movie-rating-api bccda4b5-02f4-48f4-be9c-e5c2e17d3fe1 DELETE /api/v1/movies/1 - Request started
+[2026-01-01T07:53:35.603787Z] WARNING movie-rating-api None - Movie not found for deletion: 1
+[2026-01-01T07:53:35.605154Z] WARNING movie-rating-api bccda4b5-02f4-48f4-be9c-e5c2e17d3fe1 DELETE /api/v1/movies/1 404 - HTTP exception: Movie not found
+[2026-01-01T07:53:35.605312Z] WARNING movie-rating-api bccda4b5-02f4-48f4-be9c-e5c2e17d3fe1 DELETE /api/v1/movies/1 404 4.35ms - Request completed
+[2026-01-01T07:53:38.410040Z] INFO movie-rating-api b55bc5e0-12b7-45d4-8fac-9bace04a0b52 PUT /api/v1/movies/1 - Request started
+[2026-01-01T07:53:38.413042Z] WARNING movie-rating-api None - Movie not found for update: 1
+[2026-01-01T07:53:38.414018Z] WARNING movie-rating-api b55bc5e0-12b7-45d4-8fac-9bace04a0b52 PUT /api/v1/movies/1 404 - HTTP exception: Movie not found
+[2026-01-01T07:53:38.414163Z] WARNING movie-rating-api b55bc5e0-12b7-45d4-8fac-9bace04a0b52 PUT /api/v1/movies/1 404 4.04ms - Request completed
+[2026-01-01T07:53:40.795915Z] INFO movie-rating-api 5c2103a2-1561-4429-b3e9-7b79fb9be50a POST /api/v1/movies - Request started
+[2026-01-01T07:53:40.796128Z] INFO movie-rating-api 5c2103a2-1561-4429-b3e9-7b79fb9be50a POST /api/v1/movies 307 0.15ms - Request completed
+[2026-01-01T07:53:40.799408Z] INFO movie-rating-api 931fd678-1c1e-4ac3-adeb-d531b9fa205f POST /api/v1/movies/ - Request started
+[2026-01-01T07:53:40.800293Z] WARNING movie-rating-api 931fd678-1c1e-4ac3-adeb-d531b9fa205f POST /api/v1/movies/ 422 - Validation error: 3 validation errors
+[2026-01-01T07:53:40.800427Z] WARNING movie-rating-api 931fd678-1c1e-4ac3-adeb-d531b9fa205f POST /api/v1/movies/ 422 0.95ms - Request completed
+[2026-01-01T07:53:42.900918Z] INFO movie-rating-api 82ba1b47-1df8-4531-acb6-3ff592376c55 GET /api/v1/movies/1 - Request started
+[2026-01-01T07:53:42.905246Z] WARNING movie-rating-api 82ba1b47-1df8-4531-acb6-3ff592376c55 GET /api/v1/movies/1 404 - HTTP exception: Movie not found
+[2026-01-01T07:53:42.905465Z] WARNING movie-rating-api 82ba1b47-1df8-4531-acb6-3ff592376c55 GET /api/v1/movies/1 404 4.45ms - Request completed
+[2026-01-01T07:53:46.425011Z] INFO movie-rating-api 9a498ba2-5d1d-4a23-8840-59be3261290d GET /api/v1/movies?page=1&page_size=10&title=Inception&release_year=2010 - Request started
+[2026-01-01T07:53:46.425377Z] INFO movie-rating-api 9a498ba2-5d1d-4a23-8840-59be3261290d GET /api/v1/movies?page=1&page_size=10&title=Inception&release_year=2010 307 0.18ms - Request completed
+[2026-01-01T07:53:46.428565Z] INFO movie-rating-api ae88cc57-c975-41be-944b-f6a35af31fe6 GET /api/v1/movies/?page=1&page_size=10&title=Inception&release_year=2010 - Request started
+[2026-01-01T07:53:46.433915Z] INFO movie-rating-api ae88cc57-c975-41be-944b-f6a35af31fe6 GET /api/v1/movies/?page=1&page_size=10&title=Inception&release_year=2010 200 5.15ms - Request completed
+[2026-01-01T07:53:48.801937Z] INFO movie-rating-api e868db4a-7368-4548-9dec-1134c4beafb6 GET /api/v1/movies?page=1&page_size=10&title=Inception&release_year=2010 - Request started
+[2026-01-01T07:53:48.802234Z] INFO movie-rating-api e868db4a-7368-4548-9dec-1134c4beafb6 GET /api/v1/movies?page=1&page_size=10&title=Inception&release_year=2010 307 0.19ms - Request completed
+[2026-01-01T07:53:48.806711Z] INFO movie-rating-api 597fe3bd-80dd-4374-89e9-76bf7ec9562e GET /api/v1/movies/?page=1&page_size=10&title=Inception&release_year=2010 - Request started
+[2026-01-01T07:53:48.810561Z] INFO movie-rating-api 597fe3bd-80dd-4374-89e9-76bf7ec9562e GET /api/v1/movies/?page=1&page_size=10&title=Inception&release_year=2010 200 3.72ms - Request completed
+[2026-01-01T07:53:50.812549Z] INFO movie-rating-api 7087d3f0-0a68-4ea8-aaac-3fad626e32e0 GET /api/v1/movies?page=1&page_size=10&genre=Action - Request started
+[2026-01-01T07:53:50.812790Z] INFO movie-rating-api 7087d3f0-0a68-4ea8-aaac-3fad626e32e0 GET /api/v1/movies?page=1&page_size=10&genre=Action 307 0.16ms - Request completed
+[2026-01-01T07:53:50.816047Z] INFO movie-rating-api 977d5455-5b1a-4bd4-973c-9fd32ed0c466 GET /api/v1/movies/?page=1&page_size=10&genre=Action - Request started
+[2026-01-01T07:53:50.820904Z] INFO movie-rating-api 977d5455-5b1a-4bd4-973c-9fd32ed0c466 GET /api/v1/movies/?page=1&page_size=10&genre=Action 200 4.69ms - Request completed
+[2026-01-01T07:53:52.049674Z] INFO movie-rating-api 843555bc-a12e-43a4-b251-4c89fc395642 GET /api/v1/movies/1 - Request started
+[2026-01-01T07:53:52.053947Z] WARNING movie-rating-api 843555bc-a12e-43a4-b251-4c89fc395642 GET /api/v1/movies/1 404 - HTTP exception: Movie not found
+[2026-01-01T07:53:52.054122Z] WARNING movie-rating-api 843555bc-a12e-43a4-b251-4c89fc395642 GET /api/v1/movies/1 404 4.36ms - Request completed
+[2026-01-01T07:54:16.367268Z] INFO movie-rating-api b2d641f8-d99c-4231-922b-4e3516e65da9 GET /api/v1/movies/1 - Request started
+[2026-01-01T07:54:16.370381Z] WARNING movie-rating-api b2d641f8-d99c-4231-922b-4e3516e65da9 GET /api/v1/movies/1 404 - HTTP exception: Movie not found
+[2026-01-01T07:54:16.370655Z] WARNING movie-rating-api b2d641f8-d99c-4231-922b-4e3516e65da9 GET /api/v1/movies/1 404 3.3ms - Request completed
+[2026-01-01T07:54:17.379404Z] INFO movie-rating-api 7f4f74c2-0268-4c61-ae35-76b781ef5f67 POST /api/v1/movies - Request started
+[2026-01-01T07:54:17.379662Z] INFO movie-rating-api 7f4f74c2-0268-4c61-ae35-76b781ef5f67 POST /api/v1/movies 307 0.17ms - Request completed
+[2026-01-01T07:54:17.383018Z] INFO movie-rating-api 4228bbcf-0e67-433d-a3d9-9885449c0ca7 POST /api/v1/movies/ - Request started
+[2026-01-01T07:54:17.383827Z] WARNING movie-rating-api 4228bbcf-0e67-433d-a3d9-9885449c0ca7 POST /api/v1/movies/ 422 - Validation error: 3 validation errors
+[2026-01-01T07:54:17.384066Z] WARNING movie-rating-api 4228bbcf-0e67-433d-a3d9-9885449c0ca7 POST /api/v1/movies/ 422 0.98ms - Request completed
+[2026-01-01T07:54:25.221956Z] INFO movie-rating-api 2600c4d9-389e-4da2-af82-3cd999fec254 POST /api/v1/movies - Request started
+[2026-01-01T07:54:25.222311Z] INFO movie-rating-api 2600c4d9-389e-4da2-af82-3cd999fec254 POST /api/v1/movies 307 0.28ms - Request completed
+[2026-01-01T07:54:25.224858Z] INFO movie-rating-api 6a220fc3-7c5a-46ea-bcf7-03da2d0b0422 POST /api/v1/movies/ - Request started
+[2026-01-01T07:54:25.225988Z] WARNING movie-rating-api 6a220fc3-7c5a-46ea-bcf7-03da2d0b0422 POST /api/v1/movies/ 422 - Validation error: 3 validation errors
+[2026-01-01T07:54:25.226180Z] WARNING movie-rating-api 6a220fc3-7c5a-46ea-bcf7-03da2d0b0422 POST /api/v1/movies/ 422 1.26ms - Request completed
+[2026-01-01T07:54:25.966053Z] INFO movie-rating-api 285be657-a79e-41ff-b45c-b99f7e540aa8 POST /api/v1/movies - Request started
+[2026-01-01T07:54:25.966488Z] INFO movie-rating-api 285be657-a79e-41ff-b45c-b99f7e540aa8 POST /api/v1/movies 307 0.31ms - Request completed
+[2026-01-01T07:54:25.970467Z] INFO movie-rating-api 4cbee7eb-522e-4f60-8916-7d66ca21de95 POST /api/v1/movies/ - Request started
+[2026-01-01T07:54:25.971935Z] WARNING movie-rating-api 4cbee7eb-522e-4f60-8916-7d66ca21de95 POST /api/v1/movies/ 422 - Validation error: 3 validation errors
+[2026-01-01T07:54:25.972227Z] WARNING movie-rating-api 4cbee7eb-522e-4f60-8916-7d66ca21de95 POST /api/v1/movies/ 422 1.67ms - Request completed
+[2026-01-01T07:54:31.470567Z] INFO movie-rating-api 9b85c239-1a57-4dc1-859d-8fc2cf60c6fa PUT /api/v1/movies/1 - Request started
+[2026-01-01T07:54:31.476260Z] WARNING movie-rating-api None - Movie not found for update: 1
+[2026-01-01T07:54:31.477890Z] WARNING movie-rating-api 9b85c239-1a57-4dc1-859d-8fc2cf60c6fa PUT /api/v1/movies/1 404 - HTTP exception: Movie not found
+[2026-01-01T07:54:31.478089Z] WARNING movie-rating-api 9b85c239-1a57-4dc1-859d-8fc2cf60c6fa PUT /api/v1/movies/1 404 7.41ms - Request completed
+[2026-01-01T07:54:35.010846Z] INFO movie-rating-api 1940acbc-3a02-49c0-90d7-7857c9d89402 PUT /api/v1/movies/1 - Request started
+[2026-01-01T07:54:35.013829Z] WARNING movie-rating-api None - Movie not found for update: 1
+[2026-01-01T07:54:35.015077Z] WARNING movie-rating-api 1940acbc-3a02-49c0-90d7-7857c9d89402 PUT /api/v1/movies/1 404 - HTTP exception: Movie not found
+[2026-01-01T07:54:35.015273Z] WARNING movie-rating-api 1940acbc-3a02-49c0-90d7-7857c9d89402 PUT /api/v1/movies/1 404 4.34ms - Request completed
+[2026-01-01T07:54:36.188607Z] INFO movie-rating-api a7f8d283-c913-4505-8c31-ff0636c32232 PUT /api/v1/movies/1 - Request started
+[2026-01-01T07:54:36.192892Z] WARNING movie-rating-api None - Movie not found for update: 1
+[2026-01-01T07:54:36.193784Z] WARNING movie-rating-api a7f8d283-c913-4505-8c31-ff0636c32232 PUT /api/v1/movies/1 404 - HTTP exception: Movie not found
+[2026-01-01T07:54:36.193939Z] WARNING movie-rating-api a7f8d283-c913-4505-8c31-ff0636c32232 PUT /api/v1/movies/1 404 4.91ms - Request completed
+[2026-01-01T07:54:37.912211Z] INFO movie-rating-api ca5ec0fd-b63e-485f-b2c1-a20f6d394231 POST /api/v1/movies - Request started
+[2026-01-01T07:54:37.912475Z] INFO movie-rating-api ca5ec0fd-b63e-485f-b2c1-a20f6d394231 POST /api/v1/movies 307 0.18ms - Request completed
+[2026-01-01T07:54:37.915077Z] INFO movie-rating-api b3142092-d8f7-4d80-9392-76d3d49f5e54 POST /api/v1/movies/ - Request started
+[2026-01-01T07:54:37.916246Z] WARNING movie-rating-api b3142092-d8f7-4d80-9392-76d3d49f5e54 POST /api/v1/movies/ 422 - Validation error: 3 validation errors
+[2026-01-01T07:54:37.916568Z] WARNING movie-rating-api b3142092-d8f7-4d80-9392-76d3d49f5e54 POST /api/v1/movies/ 422 1.31ms - Request completed
+[2026-01-01T07:55:27.690893Z] INFO movie-rating-api db24084c-fe53-47d2-88b7-055c50e4513a GET /api/v1/movies/100/ratings - Request started
+[2026-01-01T07:55:27.695133Z] WARNING movie-rating-api None - Movie not found for ratings retrieval: 100
+[2026-01-01T07:55:27.695962Z] WARNING movie-rating-api db24084c-fe53-47d2-88b7-055c50e4513a GET /api/v1/movies/100/ratings 404 - HTTP exception: Movie not found
+[2026-01-01T07:55:27.696105Z] WARNING movie-rating-api db24084c-fe53-47d2-88b7-055c50e4513a GET /api/v1/movies/100/ratings 404 4.9ms - Request completed
+[2026-01-01T07:55:28.390805Z] INFO movie-rating-api 01e3b1f6-e6e5-4e80-944f-7160e70396ab GET /api/v1/movies/100/ratings - Request started
+[2026-01-01T07:55:28.392894Z] WARNING movie-rating-api None - Movie not found for ratings retrieval: 100
+[2026-01-01T07:55:28.393760Z] WARNING movie-rating-api 01e3b1f6-e6e5-4e80-944f-7160e70396ab GET /api/v1/movies/100/ratings 404 - HTTP exception: Movie not found
+[2026-01-01T07:55:28.393936Z] WARNING movie-rating-api 01e3b1f6-e6e5-4e80-944f-7160e70396ab GET /api/v1/movies/100/ratings 404 3.04ms - Request completed
+[2026-01-01T07:55:30.654945Z] INFO movie-rating-api d3d203fa-f697-49a8-91fa-bf4882e938a6 POST /api/v1/movies/100/ratings?score=9 - Request started
+[2026-01-01T07:55:30.658650Z] WARNING movie-rating-api None - Movie not found for rating: 100
+[2026-01-01T07:55:30.660413Z] WARNING movie-rating-api d3d203fa-f697-49a8-91fa-bf4882e938a6 POST /api/v1/movies/100/ratings 404 - HTTP exception: Movie not found
+[2026-01-01T07:55:30.661316Z] WARNING movie-rating-api d3d203fa-f697-49a8-91fa-bf4882e938a6 POST /api/v1/movies/100/ratings?score=9 404 6.26ms - Request completed
+[2026-01-01T07:55:31.806968Z] INFO movie-rating-api 614eb30d-da9c-47b8-9761-c04e465dca5d DELETE /api/v1/movies/9999 - Request started
+[2026-01-01T07:55:31.809519Z] WARNING movie-rating-api None - Movie not found for deletion: 9999
+[2026-01-01T07:55:31.810114Z] WARNING movie-rating-api 614eb30d-da9c-47b8-9761-c04e465dca5d DELETE /api/v1/movies/9999 404 - HTTP exception: Movie not found
+[2026-01-01T07:55:31.810251Z] WARNING movie-rating-api 614eb30d-da9c-47b8-9761-c04e465dca5d DELETE /api/v1/movies/9999 404 3.21ms - Request completed
+[2026-01-01T07:55:33.596693Z] INFO movie-rating-api e867dfb6-fc05-4227-bd39-959efa40c821 PUT /api/v1/movies/100 - Request started
+[2026-01-01T07:55:33.599946Z] WARNING movie-rating-api None - Movie not found for update: 100
+[2026-01-01T07:55:33.601399Z] WARNING movie-rating-api e867dfb6-fc05-4227-bd39-959efa40c821 PUT /api/v1/movies/100 404 - HTTP exception: Movie not found
+[2026-01-01T07:55:33.601666Z] WARNING movie-rating-api e867dfb6-fc05-4227-bd39-959efa40c821 PUT /api/v1/movies/100 404 4.85ms - Request completed
+[2026-01-01T07:55:35.172320Z] INFO movie-rating-api c2a6ccf5-262d-42d6-8fa9-344ec961f03e POST /api/v1/movies - Request started
+[2026-01-01T07:55:35.172556Z] INFO movie-rating-api c2a6ccf5-262d-42d6-8fa9-344ec961f03e POST /api/v1/movies 307 0.15ms - Request completed
+[2026-01-01T07:55:35.174720Z] INFO movie-rating-api 81e38ee1-b089-4f73-9182-595256cccfbc POST /api/v1/movies/ - Request started
+[2026-01-01T07:55:35.178177Z] WARNING movie-rating-api None - Director not found: 1
+[2026-01-01T07:55:35.178769Z] WARNING movie-rating-api 81e38ee1-b089-4f73-9182-595256cccfbc POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T07:55:35.178877Z] WARNING movie-rating-api 81e38ee1-b089-4f73-9182-595256cccfbc POST /api/v1/movies/ 404 4.07ms - Request completed
+[2026-01-01T07:55:37.926176Z] INFO movie-rating-api bf263b1e-5245-4ad0-999d-b9171673bf07 GET /api/v1/movies/100 - Request started
+[2026-01-01T07:55:37.931559Z] WARNING movie-rating-api bf263b1e-5245-4ad0-999d-b9171673bf07 GET /api/v1/movies/100 404 - HTTP exception: Movie not found
+[2026-01-01T07:55:37.931886Z] WARNING movie-rating-api bf263b1e-5245-4ad0-999d-b9171673bf07 GET /api/v1/movies/100 404 5.64ms - Request completed
+[2026-01-01T07:55:40.040785Z] INFO movie-rating-api 656b75b5-7f93-40f0-a128-dadf2a4257bd GET /api/v1/movies?page=1&page_size=10&release_year=2009 - Request started
+[2026-01-01T07:55:40.041139Z] INFO movie-rating-api 656b75b5-7f93-40f0-a128-dadf2a4257bd GET /api/v1/movies?page=1&page_size=10&release_year=2009 307 0.24ms - Request completed
+[2026-01-01T07:55:40.043691Z] INFO movie-rating-api a3934dd3-a1a2-45fa-a432-e832caac1a4c GET /api/v1/movies/?page=1&page_size=10&release_year=2009 - Request started
+[2026-01-01T07:55:40.049041Z] INFO movie-rating-api a3934dd3-a1a2-45fa-a432-e832caac1a4c GET /api/v1/movies/?page=1&page_size=10&release_year=2009 200 5.2ms - Request completed
+[2026-01-01T07:55:50.264620Z] INFO movie-rating-api 15df0dd1-9127-477b-ae4e-2f43a68316a1 POST /api/v1/movies - Request started
+[2026-01-01T07:55:50.265132Z] INFO movie-rating-api 15df0dd1-9127-477b-ae4e-2f43a68316a1 POST /api/v1/movies 307 0.14ms - Request completed
+[2026-01-01T07:55:50.267247Z] INFO movie-rating-api caf33b1d-32cb-4d69-b63d-4f237ddaad76 POST /api/v1/movies/ - Request started
+[2026-01-01T07:55:50.269412Z] WARNING movie-rating-api None - Director not found: 1
+[2026-01-01T07:55:50.269961Z] WARNING movie-rating-api caf33b1d-32cb-4d69-b63d-4f237ddaad76 POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T07:55:50.270117Z] WARNING movie-rating-api caf33b1d-32cb-4d69-b63d-4f237ddaad76 POST /api/v1/movies/ 404 2.8ms - Request completed
+[2026-01-01T07:55:59.545625Z] INFO movie-rating-api a2535745-3451-4e00-8598-061daf90eafc POST /api/v1/movies - Request started
+[2026-01-01T07:55:59.545940Z] INFO movie-rating-api a2535745-3451-4e00-8598-061daf90eafc POST /api/v1/movies 307 0.21ms - Request completed
+[2026-01-01T07:55:59.549588Z] INFO movie-rating-api 4b5fc38a-9d99-471a-8645-0dbfc5401987 POST /api/v1/movies/ - Request started
+[2026-01-01T07:55:59.552792Z] WARNING movie-rating-api None - Director not found: 1
+[2026-01-01T07:55:59.553306Z] WARNING movie-rating-api 4b5fc38a-9d99-471a-8645-0dbfc5401987 POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T07:55:59.553409Z] WARNING movie-rating-api 4b5fc38a-9d99-471a-8645-0dbfc5401987 POST /api/v1/movies/ 404 3.76ms - Request completed
+[2026-01-01T07:56:00.597900Z] INFO movie-rating-api 04b878af-801e-4fdf-a547-64a626314e95 POST /api/v1/movies - Request started
+[2026-01-01T07:56:00.598227Z] INFO movie-rating-api 04b878af-801e-4fdf-a547-64a626314e95 POST /api/v1/movies 307 0.15ms - Request completed
+[2026-01-01T07:56:00.600390Z] INFO movie-rating-api 577fe05f-c893-403a-8748-f994bac619b2 POST /api/v1/movies/ - Request started
+[2026-01-01T07:56:00.603851Z] WARNING movie-rating-api None - Director not found: 1
+[2026-01-01T07:56:00.604363Z] WARNING movie-rating-api 577fe05f-c893-403a-8748-f994bac619b2 POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T07:56:00.604472Z] WARNING movie-rating-api 577fe05f-c893-403a-8748-f994bac619b2 POST /api/v1/movies/ 404 3.97ms - Request completed
+[2026-01-01T07:56:01.381105Z] INFO movie-rating-api 2047b903-f787-425c-a7b5-cf69c934061e POST /api/v1/movies - Request started
+[2026-01-01T07:56:01.381321Z] INFO movie-rating-api 2047b903-f787-425c-a7b5-cf69c934061e POST /api/v1/movies 307 0.15ms - Request completed
+[2026-01-01T07:56:01.384089Z] INFO movie-rating-api ab4f0f3c-aab2-4682-924d-1732b9ba8609 POST /api/v1/movies/ - Request started
+[2026-01-01T07:56:01.386773Z] WARNING movie-rating-api None - Director not found: 1
+[2026-01-01T07:56:01.387319Z] WARNING movie-rating-api ab4f0f3c-aab2-4682-924d-1732b9ba8609 POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T07:56:01.387449Z] WARNING movie-rating-api ab4f0f3c-aab2-4682-924d-1732b9ba8609 POST /api/v1/movies/ 404 3.28ms - Request completed
+[2026-01-01T07:56:02.132084Z] INFO movie-rating-api 23cf42fc-3079-4097-8472-a4eefdbd4fb0 POST /api/v1/movies - Request started
+[2026-01-01T07:56:02.132421Z] INFO movie-rating-api 23cf42fc-3079-4097-8472-a4eefdbd4fb0 POST /api/v1/movies 307 0.22ms - Request completed
+[2026-01-01T07:56:02.136336Z] INFO movie-rating-api d8340a1a-4245-4f1c-8b67-deb3cb545089 POST /api/v1/movies/ - Request started
+[2026-01-01T07:56:02.142323Z] WARNING movie-rating-api None - Director not found: 1
+[2026-01-01T07:56:02.143806Z] WARNING movie-rating-api d8340a1a-4245-4f1c-8b67-deb3cb545089 POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T07:56:02.143984Z] WARNING movie-rating-api d8340a1a-4245-4f1c-8b67-deb3cb545089 POST /api/v1/movies/ 404 7.35ms - Request completed
+[2026-01-01T07:56:02.975730Z] INFO movie-rating-api 73a79a17-a0c6-4662-88de-b0848e24f23e POST /api/v1/movies - Request started
+[2026-01-01T07:56:02.975963Z] INFO movie-rating-api 73a79a17-a0c6-4662-88de-b0848e24f23e POST /api/v1/movies 307 0.16ms - Request completed
+[2026-01-01T07:56:02.978219Z] INFO movie-rating-api 4952453e-1dd5-4fdc-9654-b527ebdbb525 POST /api/v1/movies/ - Request started
+[2026-01-01T07:56:02.981633Z] WARNING movie-rating-api None - Director not found: 1
+[2026-01-01T07:56:02.982300Z] WARNING movie-rating-api 4952453e-1dd5-4fdc-9654-b527ebdbb525 POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T07:56:02.982469Z] WARNING movie-rating-api 4952453e-1dd5-4fdc-9654-b527ebdbb525 POST /api/v1/movies/ 404 4.14ms - Request completed
+[2026-01-01T07:59:34.942460Z] INFO movie-rating-api 9194a225-c55f-455a-a6c1-6b1e00763ea9 POST /api/v1/movies - Request started
+[2026-01-01T07:59:34.943486Z] INFO movie-rating-api 9194a225-c55f-455a-a6c1-6b1e00763ea9 POST /api/v1/movies 307 0.16ms - Request completed
+[2026-01-01T07:59:34.946316Z] INFO movie-rating-api 50890bd6-dae5-4bb1-80b8-3f464fe02cee POST /api/v1/movies/ - Request started
+[2026-01-01T07:59:34.948774Z] WARNING movie-rating-api None - Director not found: 1
+[2026-01-01T07:59:34.949326Z] WARNING movie-rating-api 50890bd6-dae5-4bb1-80b8-3f464fe02cee POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T07:59:34.949439Z] WARNING movie-rating-api 50890bd6-dae5-4bb1-80b8-3f464fe02cee POST /api/v1/movies/ 404 3.06ms - Request completed
+[2026-01-01T07:59:36.441289Z] INFO movie-rating-api db506ea5-bef2-4297-a413-bc71830d2a63 POST /api/v1/movies - Request started
+[2026-01-01T07:59:36.441573Z] INFO movie-rating-api db506ea5-bef2-4297-a413-bc71830d2a63 POST /api/v1/movies 307 0.18ms - Request completed
+[2026-01-01T07:59:36.443966Z] INFO movie-rating-api dd1d9944-7056-47ab-b87f-5ed363a2087e POST /api/v1/movies/ - Request started
+[2026-01-01T07:59:36.448775Z] WARNING movie-rating-api None - Director not found: 1
+[2026-01-01T07:59:36.450065Z] WARNING movie-rating-api dd1d9944-7056-47ab-b87f-5ed363a2087e POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T07:59:36.450217Z] WARNING movie-rating-api dd1d9944-7056-47ab-b87f-5ed363a2087e POST /api/v1/movies/ 404 6.18ms - Request completed
+[2026-01-01T07:59:37.000224Z] INFO movie-rating-api f55f4f02-243e-42e7-8475-104b12608ab3 POST /api/v1/movies - Request started
+[2026-01-01T07:59:37.000504Z] INFO movie-rating-api f55f4f02-243e-42e7-8475-104b12608ab3 POST /api/v1/movies 307 0.17ms - Request completed
+[2026-01-01T07:59:37.002842Z] INFO movie-rating-api c1f8257b-acee-4f0a-8bd7-095a3238d543 POST /api/v1/movies/ - Request started
+[2026-01-01T07:59:37.008047Z] WARNING movie-rating-api None - Director not found: 1
+[2026-01-01T07:59:37.008767Z] WARNING movie-rating-api c1f8257b-acee-4f0a-8bd7-095a3238d543 POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T07:59:37.008967Z] WARNING movie-rating-api c1f8257b-acee-4f0a-8bd7-095a3238d543 POST /api/v1/movies/ 404 6.04ms - Request completed
+[2026-01-01T07:59:43.478602Z] INFO movie-rating-api 9e1647da-930f-4e01-97a3-af6ed2d1d192 POST /api/v1/movies - Request started
+[2026-01-01T07:59:43.478885Z] INFO movie-rating-api 9e1647da-930f-4e01-97a3-af6ed2d1d192 POST /api/v1/movies 307 0.18ms - Request completed
+[2026-01-01T07:59:43.481499Z] INFO movie-rating-api 60a02256-1548-4b87-aa95-28ae37fd1085 POST /api/v1/movies/ - Request started
+[2026-01-01T07:59:43.483838Z] WARNING movie-rating-api None - Director not found: 2
+[2026-01-01T07:59:43.484382Z] WARNING movie-rating-api 60a02256-1548-4b87-aa95-28ae37fd1085 POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T07:59:43.484502Z] WARNING movie-rating-api 60a02256-1548-4b87-aa95-28ae37fd1085 POST /api/v1/movies/ 404 2.93ms - Request completed
+[2026-01-01T07:59:44.170725Z] INFO movie-rating-api ba82d1a4-1f6f-43d0-a186-a0a385889e84 POST /api/v1/movies - Request started
+[2026-01-01T07:59:44.171564Z] INFO movie-rating-api ba82d1a4-1f6f-43d0-a186-a0a385889e84 POST /api/v1/movies 307 0.23ms - Request completed
+[2026-01-01T07:59:44.175327Z] INFO movie-rating-api 33e03d71-1ba4-4451-b5b2-41340a991b88 POST /api/v1/movies/ - Request started
+[2026-01-01T07:59:44.179800Z] WARNING movie-rating-api None - Director not found: 2
+[2026-01-01T07:59:44.181354Z] WARNING movie-rating-api 33e03d71-1ba4-4451-b5b2-41340a991b88 POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T07:59:44.181574Z] WARNING movie-rating-api 33e03d71-1ba4-4451-b5b2-41340a991b88 POST /api/v1/movies/ 404 5.99ms - Request completed
+[2026-01-01T08:00:44.830174Z] INFO movie-rating-api de6a227a-8451-4bfd-87c6-cc03dccdc190 POST /api/v1/movies - Request started
+[2026-01-01T08:00:44.830635Z] INFO movie-rating-api de6a227a-8451-4bfd-87c6-cc03dccdc190 POST /api/v1/movies 307 0.18ms - Request completed
+[2026-01-01T08:00:44.832953Z] INFO movie-rating-api a2e89c57-8536-4a27-aaf4-919fa6ce8661 POST /api/v1/movies/ - Request started
+[2026-01-01T08:00:44.835831Z] WARNING movie-rating-api None - Director not found: 2
+[2026-01-01T08:00:44.836446Z] WARNING movie-rating-api a2e89c57-8536-4a27-aaf4-919fa6ce8661 POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T08:00:44.836566Z] WARNING movie-rating-api a2e89c57-8536-4a27-aaf4-919fa6ce8661 POST /api/v1/movies/ 404 3.56ms - Request completed
+[2026-01-01T08:00:45.383659Z] INFO movie-rating-api ee755a19-2a4b-436e-9725-2b6ba4bd73c1 POST /api/v1/movies - Request started
+[2026-01-01T08:00:45.383968Z] INFO movie-rating-api ee755a19-2a4b-436e-9725-2b6ba4bd73c1 POST /api/v1/movies 307 0.2ms - Request completed
+[2026-01-01T08:00:45.386888Z] INFO movie-rating-api 03605766-2bd6-4f05-8628-26f3a43a2beb POST /api/v1/movies/ - Request started
+[2026-01-01T08:00:45.392531Z] WARNING movie-rating-api None - Director not found: 2
+[2026-01-01T08:00:45.393868Z] WARNING movie-rating-api 03605766-2bd6-4f05-8628-26f3a43a2beb POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T08:00:45.394067Z] WARNING movie-rating-api 03605766-2bd6-4f05-8628-26f3a43a2beb POST /api/v1/movies/ 404 7.08ms - Request completed
+[2026-01-01T08:00:45.631504Z] INFO movie-rating-api 3e6cf5e2-b52a-407b-9e10-4bc1f71d7cb3 POST /api/v1/movies - Request started
+[2026-01-01T08:00:45.631721Z] INFO movie-rating-api 3e6cf5e2-b52a-407b-9e10-4bc1f71d7cb3 POST /api/v1/movies 307 0.14ms - Request completed
+[2026-01-01T08:00:45.633334Z] INFO movie-rating-api 29e4779b-a039-4ba7-bd98-7d316cd31417 POST /api/v1/movies/ - Request started
+[2026-01-01T08:00:45.636347Z] WARNING movie-rating-api None - Director not found: 2
+[2026-01-01T08:00:45.637199Z] WARNING movie-rating-api 29e4779b-a039-4ba7-bd98-7d316cd31417 POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T08:00:45.637354Z] WARNING movie-rating-api 29e4779b-a039-4ba7-bd98-7d316cd31417 POST /api/v1/movies/ 404 3.95ms - Request completed
+[2026-01-01T08:00:45.913904Z] INFO movie-rating-api b8349337-8a29-43d4-9c25-46f1594b2276 POST /api/v1/movies - Request started
+[2026-01-01T08:00:45.914091Z] INFO movie-rating-api b8349337-8a29-43d4-9c25-46f1594b2276 POST /api/v1/movies 307 0.13ms - Request completed
+[2026-01-01T08:00:45.916091Z] INFO movie-rating-api e7b602ad-8b35-450a-845c-61dd78e19f99 POST /api/v1/movies/ - Request started
+[2026-01-01T08:00:45.919003Z] WARNING movie-rating-api None - Director not found: 2
+[2026-01-01T08:00:45.919610Z] WARNING movie-rating-api e7b602ad-8b35-450a-845c-61dd78e19f99 POST /api/v1/movies/ 404 - HTTP exception: Director not found
+[2026-01-01T08:00:45.919749Z] WARNING movie-rating-api e7b602ad-8b35-450a-845c-61dd78e19f99 POST /api/v1/movies/ 404 3.54ms - Request completed
